@@ -50,7 +50,7 @@ html,body {
     transform: rotate(40deg);
 }
 
-.block-text {
+.block-content {
     display: none;
     padding: 10px 0 0 0;
 }

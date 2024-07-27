@@ -21,7 +21,6 @@ body {
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
-    /*height: 100vh; !* 100% высоты viewport *!*/
 }
 
 header {
@@ -58,7 +57,6 @@ header .container1 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
@@ -104,14 +102,6 @@ header .container1 {
 
 .icon i:hover {
     background: #efedfb;
-}
-
-.icon:first-child i {
-    /*margin-left: 15px;*/
-}
-
-.icon:last-child i {
-    /*margin-right: 15px;*/
 }
 
 .wrapper .tabs-box {
@@ -377,11 +367,22 @@ hr {
     transform: rotate(180deg);
 }
 
-.block-text {
+.block-content {
     display: none;
     padding: 10px 0 0 0;
 }
 
 .block-item {
     margin: 0 0 20px 0;
+}
+
+.info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-icons {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
