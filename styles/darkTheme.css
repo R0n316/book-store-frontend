@@ -1,0 +1,97 @@
+*{
+    color: white;
+}
+
+body{
+    background-color: #1F1A2D;
+}
+
+header{
+    background-color: #1F1A2D;
+}
+.container1{
+    background-color: #1F1A2D;
+}
+
+.logo{
+    background-image: url("../images/logoDark.svg");
+}
+
+.search{
+    background: #2B2244 url("../images/searchIcon.svg") no-repeat center left 7px;
+    color: white;
+}
+
+.category{
+    border: 1px solid white;
+    color: white;
+    background-color: #1F1A2D;
+}
+
+.nav-button{
+    color: white;
+}
+
+.login-button{
+    background: white ;
+    color: rgb(41, 2, 71);
+}
+
+.div-button{
+    background: rgb(41, 2, 71);
+    color: white;
+}
+.catalog-button{
+    border: 1px solid white;
+}
+
+.catalog-image{
+    background-image: url("../images/catalogButtonDetailsDark.svg");
+}
+
+
+.watch-all-button{
+    border: 1px solid rgb(17, 12, 31);
+}
+.book-card{
+    background-color: #2B2244;
+    border: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.book-author{
+    color: rgb(141, 141, 141);
+}
+
+.add-to-cart-button{
+    background: white;
+    color: rgb(41, 2, 71);
+}
+
+.menu{
+    background-color: rgb(41, 2, 71);
+}
+
+.menu div:hover{
+    background-color: #E6DCFF;
+}
+
+.banner1-h1, .banner1-h2{
+    color: black;
+}
+
+.best-sellers{
+    background-color: #1F1A2D;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.favorites-icon{
+    background-image: url("../images/favoritesIconDark.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.cart-icon{
+    background-image: url("../images/cartIconDark.svg");
+}

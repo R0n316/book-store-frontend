@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #262c56;
+    --secondary: #32396b;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #808bef;
+    display: grid;
+    place-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 80vw;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .6rem;
+}
+
+.slider .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6rem;
+    height: 100%;
+    /*padding: .5rem;*/
+    display: flex;
+    align-items: center;
+}
+
+.slider .icon.hide {
+    display: none;
+}
+
+.slider .icon:first-child {
+    left: 0;
+    background: linear-gradient(to right, var(--primary) 45%, transparent);
+}
+
+.slider .icon:last-child {
+    justify-content: flex-end;
+    right: 0;
+    background: linear-gradient(to left, var(--primary) 45%, transparent);
+}
+
+.icon .left-arrow,
+.icon .right-arrow {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    text-align: center;
+    font: 200 2rem / 2.4rem "poppins", sans-serif;
+}
+
+.icon span:hover {
+    background-color: #fff2;
+    cursor: pointer;
+}
+
+.tabs {
+    min-width: 100%;
+    list-style: none;
+    display: flex;
+    gap: .8rem;
+    overflow-x: auto;
+}
+
+.slider .tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tabs .tab {
+    white-space: nowrap;
+    background-color: var(--secondary);
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.tabs .tab:hover {
+    background-color: #fff2;
+    cursor: pointer;
+}
+
+.tabs .tab.active {
+    background-color: whitesmoke;
+    color: #111;
+}

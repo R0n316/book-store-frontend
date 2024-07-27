@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Philosopher, serif;
+}
+
+body {
+    margin-top: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*height: 100vh; !* 100% высоты viewport *!*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container1 {
+    display: flex;
+}
+
+.logo {
+    margin-right: 4%;
+}
+
+.burger-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    border: 1px solid #290247;
+    border-radius: 5px;
+    margin-right: 8%;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-around;
+}
+
+.categories * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 13px;
+}
+
+.wrapper .icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.icon:first-child {
+    left: 0;
+    display: none;
+    background: linear-gradient(90deg, #fff 50%, transparent);
+}
+
+.icon:last-child {
+    right: 0;
+    justify-content: flex-end;
+    background: linear-gradient(-90deg, #fff 50%, transparent);
+}
+
+.icon i {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+}
+
+.icon i:hover {
+    background: #efedfb;
+}
+
+.icon:first-child i {
+    /*margin-left: 15px;*/
+}
+
+.icon:last-child i {
+    /*margin-right: 15px;*/
+}
+
+.wrapper .tabs-box {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.tabs-box.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.tabs-box .tab {
+    cursor: pointer;
+    font-size: 1rem;
+    white-space: nowrap;
+    background: white;
+    padding: 6px 16px;
+    border-radius: 10px;
+    border: 1px solid #110c1f;
+    transition: .2s ease-in-out;
+    transition-property: background-color;
+}
+
+.tabs-box .tab:hover {
+    background: #efedfb;
+}
+
+.tabs-box.dragging .tab {
+    user-select: none;
+    pointer-events: none;
+}
+
+.tabs-box .tab.active {
+    color: #fff;
+    background: #110c1f;
+    border-color: transparent;
+}
+
+@media (max-width: 699px) {
+    .icon {
+        display: none !important;
+    }
+}
+
+
+.banner {
+    background-image: url("../images/banner1-background.svg");
+    background-color: #b9e6ff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    flex: 0 0 30%;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+}
+
+@media (max-width: 699px) {
+    .banner {
+        display: none;
+    }
+}
+
+.book-card {
+    background-color: white;
+    padding: 8px;
+    min-width: 242px;
+    max-width: 242px;
+    height: 155px;
+    box-shadow: 1px 0 20px -5px rgba(31, 26, 45, 0.22);
+    display: flex;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.book-img {
+    margin-right: 8px;
+}
+
+.book-card .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card .container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.rating-container {
+    width: 38px;
+    justify-content: space-around;
+}
+
+.rating {
+    font-size: 14px;
+}
+
+.star {
+    width: 16px;
+    height: 16px;
+}
+
+.rating-container {
+    display: flex;
+}
+
+.favorites {
+    width: 20px;
+    height: 20px;
+}
+
+.book-name {
+    font-size: 14px;
+    color: #290247;
+    margin-bottom: 4px;
+}
+
+.book-author {
+    font-size: 12px;
+    color: #8D8D8D;
+    margin-bottom: 29px;
+}
+
+.book-card .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.to-cart-button {
+    padding: 8px 12px;
+    background-color: #290247;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.book-cards {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.book-cards::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.best-sellers {
+    background-color: #b9e6ff;
+    background-image: url("../images/best-sellers-background.png");
+    background-position: -80px -60px;
+    height: 199px;
+    padding: 32px 20px;
+    margin-bottom: 30px;
+}
+
+.more-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.more-container {
+    display: flex;
+    align-items: center;
+}
+
+.more {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 8px;
+}
+
+.more-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #110C1F;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.banners {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 92px;
+}
+
+.banners img {
+    width: 300px;
+    height: 208px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 660px) {
+    .banners img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 661px) and (max-width: 970px) {
+    .banners {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banners img {
+        width: 48%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+hr {
+    border-top: 1px solid #290247;
+    margin-bottom: 24px;
+}
+
+
+.block-title {
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-title .arrow {
+    transition: all 350ms ease 0ms;
+}
+
+.block-title.active .arrow {
+    transform: rotate(180deg);
+}
+
+.block-text {
+    display: none;
+    padding: 10px 0 0 0;
+}
+
+.block-item {
+    margin: 0 0 20px 0;
+}
