@@ -206,14 +206,14 @@ header {
     margin-right: 105px;
 }
 
-.book-name{
+.review-book-name{
     font-size: 13px;
     font-weight: 400;
     line-height: 97%;
     margin-bottom: 4px;
 }
 
-.book-author{
+.review-book-author{
     font-size: 14px;
     font-weight: 400;
 }

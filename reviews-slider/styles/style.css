@@ -27,20 +27,20 @@
     box-shadow: 1px 0 27px -5px rgba(31, 26, 45, 0.22);
 }
 
-.book-author {
+.review-book-author {
     font-size: 12px;
     font-weight: 400;
     color: #8D8D8D;
 }
 
-.book-name {
+.review-book-name {
     font-size: 14px;
     font-weight: 400;
     color: #290247;
 }
 
-.book-name,
-.book-author {
+.review-book-name,
+.review-book-author {
     margin-bottom: 4px;
 }
 

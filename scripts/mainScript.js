@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let bookNames = document.querySelectorAll('.book-name');
-    let bookAuthors = document.querySelectorAll(".book-author");
+    let bookNames = document.querySelectorAll('.review-book-name');
+    let bookAuthors = document.querySelectorAll(".review-book-author");
     bookNames.forEach(bookName => {
         if(bookName.innerHTML.length>47){
             bookName.textContent = bookName.innerHTML.slice(0, 47) + "...";
