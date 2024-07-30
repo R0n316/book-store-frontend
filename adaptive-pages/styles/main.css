@@ -413,6 +413,9 @@ hr {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.info:last-child {
+    border-bottom: none;
+}
 
 .footer-icons {
     width: 200px;
