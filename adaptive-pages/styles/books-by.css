@@ -189,3 +189,18 @@
     background-color: #110C1F;
     color: white;
 }
+
+@media (min-width: 650px) {
+    .book-card {
+        width: 47%;
+    }
+    .book-cards {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .book-card {
+        width: 30%;
+    }
+}
